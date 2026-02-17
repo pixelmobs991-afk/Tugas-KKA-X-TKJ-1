@@ -1,112 +1,129 @@
 <!DOCTYPE html>
-<html>
-<style>
-	
-  body { 
-     font-family: Arial, sans-serif;
-	 background-color: #C3CFE2;
-	 padding: 20px;
-}
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas KKA</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body { 
+      font-family: Arial, sans-serif;
+      background-color: #C3CFE2;
+      padding: 20px;
+      line-height: 1.6;
+    }
 
- .judul {
-     background-color: #6e6e65;
-     border: 8px solid black;
-     border-radius: 20px;
-     text-align: center;
-}
+    .judul {
+      background-color: #6e6e65;
+      border: 8px solid black;
+      border-radius: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
- .judul h1 {
- 	color: white;
-     margin: 10px;
-     font-size: clamp(40px, 8vw, 60px);
-}
+    .judul h1 {
+      color: white;
+      margin: 10px;
+      font-size: clamp(40px, 8vw, 60px);
+    }
 
-.subjudul {
-   background-color: #4695e3;
-   border: 8px solid black;
-   border-radius: 35px;
-   margin: 20px;
-   padding: 30px;
-}
+    .subjudul {
+      background-color: #4695e3;
+      border: 8px solid black;
+      border-radius: 35px;
+      margin: 20px 0;
+      padding: 30px;
+    }
 
-.subjudul h2 {
-   color: white;
-   font-size: clamp(24px, 5vw, 32px);
-   text-align: left;
-}
+    .subjudul h2 {
+      color: white;
+      font-size: clamp(24px, 5vw, 32px);
+      text-align: left;
+      margin-bottom: 15px;
+    }
 
-.subjudul h {
-	margin-bottom: 25px;
-}
+    .subjudul p {
+      color: white;
+      font-size: clamp(18px, 4vw, 25px);
+      text-align: left;
+      margin: 10px 0;
+      padding: 8px 15px;
+      background-color: black; /* Fixed: solid black → background-color */
+      border-radius: 10px;
+      display: inline-block; /* Biar bullet ● rapi */
+    }
 
-.subjudul p {
-	color: white;
-	font-size: clamp(18px, 4vw, 25px);
-	text-align: left;
-	margin: 10px;
-	padding: 8px 15px;
-	background: solid black;
-	border-radius: 10px;
-}
+    .btn-container {
+      text-align: left;
+    }
 
-.btn-container {
-	text-align: left;
-}
+    .btn-tugas {
+      display: inline-block;
+      background: #f5e427;
+      color: black;
+      text-decoration: none;
+      font-size: clamp(18px, 4vw, 24px);
+      font-weight: bold;
+      padding: 15px 30px;
+      border: 4px solid white;
+      border-radius: 50px;
+      margin: 20px auto; /* Tambahan dari diskusi sebelumnya */
+      display: block;
+      text-align: center;
+      transition: transform 0.3s;
+    }
 
-.btn-tugas {
-	display: inline-block;
-	background: #f5e427;
-	color: black;
-	text-decoration: none;
-	font-size: clamp(18px, 4vw, 24px);
-	font-weight: bold;
-	padding: 15px 30px;
-	border: 4px solid white;
-	border-radius: 50px;
-}
+    .btn-tugas:hover {
+      transform: translateY(-2px);
+    }
 
-.btn-materi {
-	display: inline-block;
-	background: #F52727;
-	color: white;
-	text-decorotion: none;
-	font-size: clamp(18px, 4vw, 24px);
-	font-weight: bold;
-	padding: 15px 30px;
-	border: 4px solid white;
-	border-radius: 50px;
-	margin: 20px auto;
-}
-	
+    .btn-materi {
+      display: inline-block;
+      background: #ff6b6b; /* Merah mirip tugas sebelumnya */
+      color: white;
+      text-decoration: none;
+      font-size: clamp(14px, 3vw, 18px);
+      font-weight: bold;
+      padding: 5px 12px;
+      border: 2px solid white;
+      border-radius: 20px;
+      margin-left: 10px;
+      transition: all 0.3s;
+    }
 
-</style>
+    .btn-materi:hover {
+      background: #ee5a52;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
 <body>
 
 <div class="judul">
   <h1>Tugas KKA</h1>
-<div class="subjudul">
-<div class="btn-container">
-  <h2>Semester 1:</h2>
-  <h>
-  <p>● Biodata Lama</p>
-  <p>● Hewan Ovovivipar</p>
-  <p>● Mobil Ferrari</p>
-  </h>
-  <a href="Tugas Semester 1 KKA.html" class="btn-tugas">Tugas 1 -></a>
-</div>
 </div>
 
 <div class="subjudul">
-<div class="btn-container">
-  <h2>Semester 2:</h2>
-  <h>
-  <p>● Biodata Baru<a href="Biodata baru.html" class="btn-materi">Next -></a></p>
-  <p>● Sepatu Nike<a href="Sepatu.html" class="btn-materi">Next -></a></p>
-  <p>● Dinosaurus Tyrannosaurus Rex<a href="Dino.html" class="btn-materi">Next -></a></p>
-  <p>● Naruto Shippuden<a href="Anime.html" class="btn-materi">Next -></a></p>
-  </h>
-  <a href="Biodata baru.html" class="btn-tugas">Tugas 2 -></a>
- </div>
- </div>
+  <div class="btn-container">
+    <h2>Semester 1:</h2>
+    <p>● Biodata Lama</p>
+    <p>● Hewan Ovovivipar</p>
+    <p>● Mobil Ferrari</p>
+    <a href="Tugas Semester 1 KKA.html" class="btn-tugas">Tugas 1 -> </a>
+  </div>
+</div>
+
+<div class="subjudul">
+  <div class="btn-container">
+    <h2>Semester 2:</h2>
+    <p>● Biodata Baru <a href="Biodata baru.html" class="btn-materi">Next -> </a></p>
+    <p>● Sepatu Nike <a href="Sepatu.html" class="btn-materi">Next -> </a></p>
+    <p>● Dinosaurus Tyrannosaurus Rex <a href="Dino.html" class="btn-materi">Next -> </a></p>
+    <p>● Naruto Shippuden <a href="Anime.html" class="btn-materi">Next -> </a></p>
+    <a href="Biodata baru.html" class="btn-tugas">Tugas 2 -> </a>
+  </div>
+</div>
+
 </body>
 </html>
